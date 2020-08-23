@@ -10,6 +10,6 @@ type User struct{
 }
 
 type Repository interface{
-	createUser(ctx *context.Context,user User)(err error)
-	getUser(ctx *context.Context,userID string)(string, error)
+	CreateUser(ctx *context.Context,user User)(err error)
+	GetUser(ctx *context.Context,userID string)(string, error)
 }
